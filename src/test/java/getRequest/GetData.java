@@ -52,7 +52,7 @@ public class GetData {
 
 		// Patch Request to active and inactive subscriber
 		given().headers("Authorization", "Basic MDA2OmIxNzJmMzAzOTEyOTAwZWUzYjY5MjMxZDI3NWRlZTdm")
-				.contentType("application/json").body("{\"subscriberInfo\":{\"statusCode\" : \"I\"}}")
+				.contentType("application/json").body("{\"subscriberInfo\":{\"statusCode\" : \"A\"}}")
 				.patch("http://10.67.198.30:8080/bep-mf-api/subscribers/2018").andReturn().then().statusCode(200).log()
 				.all();
 
