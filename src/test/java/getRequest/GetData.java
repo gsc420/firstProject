@@ -47,7 +47,7 @@ public class GetData {
 		System.out.println("Response Body is: " + body.asString());
 	}
 
-	//@Test
+	@Test
 	public void patchSubcriber() {
 
 		// Patch Request to active and inactive subscriber
